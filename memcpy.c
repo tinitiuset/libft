@@ -1,6 +1,18 @@
-void *ft_memcpy(void *dest, const void *src, size_t n)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/29 13:08:04 by mvalient          #+#    #+#             */
+/*   Updated: 2022/08/29 13:12:39 by mvalient         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*d;
+	char		*d;
 	const char	*s;
 
 	d = dest;
