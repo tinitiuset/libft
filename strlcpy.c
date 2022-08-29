@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   strlcpy.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/29 13:08:32 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/29 15:46:25 by mvalient         ###   ########.fr       */
+/*   Created: 2022/08/29 13:58:32 by mvalient          #+#    #+#             */
+/*   Updated: 2022/08/29 15:45:57 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlcpy(char *dst, const char *src, size_t maxlen)
 {
-	size_t	i;
+	size_t	srclen;
 
-	i = 0;
-	while (str[i])
+	srclen = ft_strlen(src);
+	if (srclen + 1 < maxlen)
 	{
-		i++;
+		ft_memcpy(dst, src, srclen + 1);
 	}
-	return (i);
+	else if (maxlen != 0)
+	{
+		ft_memcpy(dst, src, maxlen -1);
+		dst[maxlen - 1] = '\0';
+	}
+	return (srclen);
 }
