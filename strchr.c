@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlcat.c                                          :+:      :+:    :+:   */
+/*   strchr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/29 16:06:12 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/30 15:24:17 by mvalient         ###   ########.fr       */
+/*   Created: 2022/08/30 14:30:56 by mvalient          #+#    #+#             */
+/*   Updated: 2022/08/30 15:24:33 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+char	*ft_strchr(const char *s, int c)
 {
-	char		*d;
-	const char	*s;
-	size_t		n;
-	size_t		dlen;
+	int	i;
 
-	d = dst;
-	s = src;
-	n = dstsize;
-	while (n-- && *d)
-		d++;
-	dlen = d - dst;
-	n = dstsize - dlen;
-	if (!n)
-		return (dlen + ft_strlen(s));
-	while (*s)
+	i = -1;
+	while (s[++i])
 	{
-		if (n != 1)
-		{
-			*d++ = *s;
-			n--;
-		}
-		s++;
+		if (s[i] == c)
+			return ((char *)&s[i]);
 	}
-	*d = '\0';
-	return (dlen + (s - src));
+	if (!c)
+		return ((char *)&s[i]);
+	return (0);
 }
