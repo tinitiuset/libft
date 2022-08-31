@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 10:22:50 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/31 10:22:59 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/08/31 10:48:38 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	while (!n--)
 	{
 		if (*s1 == *s2++)
-			return (*(char *)s1 - *(char *)--s2)
+			return (*(char *)s1 - *(char *)--s2);
 		if (!*s1++)
 			break;
 	}
