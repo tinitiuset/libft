@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.c                                            :+:      :+:    :+:   */
+/*   memcmp.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvalient <mvalient@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/31 14:54:29 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/31 17:01:05 by mvalient         ###   ########.fr       */
+/*   Created: 2022/08/31 16:26:48 by mvalient          #+#    #+#             */
+/*   Updated: 2022/08/31 17:02:42 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	a[20] = "bs2asd";
-	char	b[20] = "bsdasd";
+	unsigned char	*str1;
+	unsigned char	*str2;
 
-	printf("memcmp: %d\n", memcmp(a, b, 20));
-	printf("ft_memcmp: %d\n", ft_memcmp(a, b, 20));
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	if (!n)
+		return (0);
+	while (n--)
+	{
+		if (*str1 != *str2)
+			return (*str1 - *str2);
+		str1++;
+		str2++;
+	}
+	return (0);
 }
