@@ -6,7 +6,7 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 15:31:00 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/01 10:05:50 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/01 15:50:41 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,16 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	char	*j;
+	char	*found;
 
-	i = -1;
-	j = 0;
-	while (s[++i])
+	c = (unsigned char) c;
+	if (c == '\0')
+		return (strchr(s, '\0'));
+	found = NULL;
+	while (strchr(s, c) != NULL )
 	{
-		if (s[i] == c)
-			j = ((char *)&s[i]);
+		found = strchr(s, c);
+		s = found + 1;
 	}
-	return (j);
+	return ((char *) found);
 }
