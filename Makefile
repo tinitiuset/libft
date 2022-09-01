@@ -1,9 +1,8 @@
 NAME = libft.a
 
 SRC = bzero.c \
-	  isalnum.c\
 
-OBJS = $(SRC:.c= o)
+OBJS = $(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
@@ -11,6 +10,9 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@echo "Library Compiled"
+
+$(OBJS) : $(SRC)
+	@gcc $(FLAGS) -c $< -o $@
 
 run: all
 	
