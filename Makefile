@@ -1,8 +1,27 @@
 NAME = libft.a
 
 SRC = bzero.c \
+	  isalnum.c \
+	  isalpha.c \
+	  isascii.c \
+	  isdigit.c \
+	  isprint.c \
+	  memchr.c \
+	  memcmp.c \
+	  memcpy.c \
+	  memmove.c \
+	  memset.c \
+	  strchr.c \
+	  strlcat.c \
+	  strlcpy.c \
+	  strlen.c \
+	  strncmp.c \
+	  strnstr.c \
+	  strrchr.c \
+	  tolower.c \
+	  toupper.c \
 
-OBJS = $(SRC:.c=.o)
+OBJS = $(SRC:%.c=%.o)
 FLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
@@ -12,7 +31,7 @@ $(NAME): $(OBJS)
 	@echo "Library Compiled"
 
 $(OBJS) : $(SRC)
-	@gcc $(FLAGS) -c $< -o $@
+	@gcc $(FLAGS) -c $(SRC)
 
 run: all
 	

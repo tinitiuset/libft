@@ -6,9 +6,11 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 13:08:20 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/29 13:14:40 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/01 14:32:48 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -17,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	ptr = s;
 	i = -1;
-	while (++i < n)
+	while (++i < (int)n)
 		ptr[i] = c;
 	return (s);
 }
