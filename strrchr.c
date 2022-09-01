@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.c                                            :+:      :+:    :+:   */
+/*   strrchr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvalient <mvalient@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/31 14:54:29 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/01 09:57:51 by mvalient         ###   ########.fr       */
+/*   Created: 2022/08/30 15:31:00 by mvalient          #+#    #+#             */
+/*   Updated: 2022/09/01 10:05:50 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char	*ft_strrchr(const char *s, int c)
 {
-	char	a[20] = "bs2asd";
-	char	b[20] = "bsdasd";
+	int		i;
+	char	*j;
 
-	printf("strrchr: %s\n", strrchr(a, 97));
-	printf("ft_strrchr: %s\n", ft_strrchr(a, 97));
+	i = -1;
+	j = 0;
+	while (s[++i])
+	{
+		if (s[i] == c)
+			j = ((char *)&s[i]);
+	}
+	return (j);
 }

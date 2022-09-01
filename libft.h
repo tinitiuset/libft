@@ -6,7 +6,7 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 15:42:35 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/31 17:02:56 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/01 09:54:58 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -34,4 +34,5 @@ void	*ft_memset(void *s, int c, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t maxlen);
 size_t	ft_strlen(const char *str);
 
+char	*ft_strrchr(const char *s, int c);
 #endif
