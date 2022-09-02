@@ -6,13 +6,15 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 13:59:13 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/01 14:30:53 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/02 11:34:04 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_tolower(int c)
 {
-	if (!(97 <= c && c <= 122))
+	if (ft_isupper(c))
 		c = c + 32;
 	return (c);
 }

@@ -6,13 +6,15 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 12:57:21 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/01 14:31:10 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/02 11:34:20 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_toupper(int c)
 {
-	if (!(65 <= c && c <= 90))
+	if (ft_islower(c))
 		c = c - 32;
 	return (c);
 }
