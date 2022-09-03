@@ -2,6 +2,7 @@ NAME = libft.a
 
 SRC =	atoi.c \
 	bzero.c \
+	calloc.c \
 	isalnum.c \
 	isalpha.c \
 	isascii.c \
