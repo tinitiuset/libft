@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   isalnum.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 13:07:05 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/29 13:10:47 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/03 20:43:11 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

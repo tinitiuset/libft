@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   isalpha.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 13:07:17 by mvalient          #+#    #+#             */
-/*   Updated: 2022/08/29 13:11:17 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/03 20:43:58 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isupper(int c)
 {

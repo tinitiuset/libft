@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 15:42:35 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/02 12:07:22 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/03 20:50:41 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
