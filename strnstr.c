@@ -6,7 +6,7 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 10:08:06 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/03 11:28:14 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/03 11:47:47 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		while (*(needle + match)
 			&& needle[match] == haystack[i + match]
 			&& i + match < len)
-			matches++;
+			match++;
 		if (!needle[match])
 			return ((char *)haystack + i);
 		i++;
