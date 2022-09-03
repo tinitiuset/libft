@@ -6,7 +6,7 @@
 /*   By: mvalient <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 13:08:14 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/01 15:06:35 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/03 12:04:00 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const char	*s;
 	char		*lasts;
 
+	if (!dest && !src)
+		return (dest);
 	d = dest;
 	s = src;
 	if (d < s)
