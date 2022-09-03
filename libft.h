@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 15:42:35 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/03 20:50:41 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/03 21:36:43 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 
+int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
 int		ft_islower(int c);

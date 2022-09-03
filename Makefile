@@ -1,25 +1,26 @@
 NAME = libft.a
 
-SRC = bzero.c \
-	  isalnum.c \
-	  isalpha.c \
-	  isascii.c \
-	  isdigit.c \
-	  isprint.c \
-	  memchr.c \
-	  memcmp.c \
-	  memcpy.c \
-	  memmove.c \
-	  memset.c \
-	  strchr.c \
-	  strlcat.c \
-	  strlcpy.c \
-	  strlen.c \
-	  strncmp.c \
-	  strnstr.c \
-	  strrchr.c \
-	  tolower.c \
-	  toupper.c \
+SRC =	atoi.c \
+	bzero.c \
+	isalnum.c \
+	isalpha.c \
+	isascii.c \
+	isdigit.c \
+	isprint.c \
+	memchr.c \
+	memcmp.c \
+	memcpy.c \
+	memmove.c \
+	memset.c \
+	strchr.c \
+	strlcat.c \
+	strlcpy.c \
+	strlen.c \
+	strncmp.c \
+	strnstr.c \
+	strrchr.c \
+	tolower.c \
+	toupper.c \
 
 OBJS = $(SRC:%.c=%.o)
 FLAGS = -Wall -Werror -Wextra
