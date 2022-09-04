@@ -21,6 +21,7 @@ SRC =	atoi.c \
 	strncmp.c \
 	strnstr.c \
 	strrchr.c \
+	substr.c \
 	tolower.c \
 	toupper.c \
 
