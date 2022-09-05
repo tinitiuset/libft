@@ -23,6 +23,7 @@ SRC =	atoi.c \
 	strnstr.c \
 	strrchr.c \
 	substr.c \
+	strtrim.c \
 	tolower.c \
 	toupper.c \
 
