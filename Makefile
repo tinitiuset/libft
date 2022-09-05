@@ -14,6 +14,7 @@ SRC =	atoi.c \
 	memmove.c \
 	memset.c \
 	strchr.c \
+	strjoin.c \
 	strdup.c \
 	strlcat.c \
 	strlcpy.c \
