@@ -1,20 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isprint.c                                          :+:      :+:    :+:   */
+/*   itoa.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/29 13:07:51 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/06 10:29:31 by mvalient         ###   ########.fr       */
+/*   Created: 2022/09/06 15:53:00 by mvalient          #+#    #+#             */
+/*   Updated: 2022/09/06 17:17:30 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+char	*ft_itoa(int n)
 {
-	if (32 <= c && c <= 126)
-		return (1);
-	return (0);
+	size_t	i;
+	int	digits;
+	char	*nb;
+	
+	if (n >= 0)
+	{
+		digits = n;
+		i = 1;
+		while (n > 9)
+		{
+			n = n / 10;
+			i++;
+		}
+		printf("%lu", i);
+		printf("%d", n);
+		nb = malloc(i);
+
+	}
+	else
+	{
+		i = 1;
+	}
 }

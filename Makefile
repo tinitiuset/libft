@@ -8,11 +8,13 @@ SRC =	atoi.c \
 	isascii.c \
 	isdigit.c \
 	isprint.c \
+	itoa.c \
 	memchr.c \
 	memcmp.c \
 	memcpy.c \
 	memmove.c \
 	memset.c \
+	split.c \
 	strchr.c \
 	strjoin.c \
 	strdup.c \
