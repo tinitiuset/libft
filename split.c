@@ -6,61 +6,83 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 10:24:56 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/06 15:29:58 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/07 10:15:34 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_into(char const *s, char c)
+size_t	ft_split_times(char const *s, char c)
 {
-	size_t	i;
+	size_t	times;
+	int		jump;
 
-	i = 0;
+	times = 0;
+	jump = 0;
 	while (*s)
 	{
-		if (*s == c)
-			i++;
+		if (*s != c && jump == 0)
+		{
+			jump = 1;
+			times++;
+		}
+		else if (jump == 1 && *s == c)
+			jump = 0;
 		s++;
 	}
-	return (i);
+	return (times);
 }
 
-char	**ft_alloc_split_mem(char const *s, char c, size_t i)
+size_t	ft_chars_until_c(const char *s, char c)
 {
-	const char	*s2;
-	char	**str;
-	size_t	k;
-	size_t	j;
+	size_t	len;
 
-	str = malloc(i);
-	//printf("divided in %zu\n", i);
-	k = -1;
-	while (++k <= i)
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	return (len);
+}
+
+char	*ft_alloc_copy_word(const char *s, size_t len)
+{
+	char	*word;
+	size_t	i;
+
+	word = malloc(len + 1);
+	i = 0;
+	while (len--)
 	{
-		j = 0;
-		//printf("%s\n", s);
-		s2 = s;
-		while(*s && *s != c)
-		{
-			j++;
-			s++;
-		}
-		s++;
-		str[k] = malloc(j + 1);
-		//printf("string %zu has %zu chars\n", k, j);
-		while (j--)
-			*str[k]++ = *s2++;
+		word[i] = s[i];
+		i++;
 	}
-	return (str);
+	word[i] = '\0';
+	return (word);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char 	**str;
+	char	**split;
+	size_t	split_size;
+	size_t	chars_until_c;
 	size_t	i;
-	
-	i = ft_into(s, c);
-	str = ft_alloc_split_mem(s, c, i);
-	return (str);
+
+	if (!s)
+		return (0);
+	split_size = ft_split_times(s, c);
+	split = malloc(sizeof(char *) * (split_size + 1));
+	if (!split)
+		return (0);
+	i = 0;
+	while (i < split_size)
+	{
+		chars_until_c = ft_chars_until_c(s, c);
+		if (chars_until_c)
+		{
+			split[i] = ft_alloc_copy_word(s, chars_until_c);
+			i++;
+		}
+		s = s + chars_until_c + 1;
+	}
+	split[i] = 0;
+	return (split);
 }
