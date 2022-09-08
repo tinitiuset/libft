@@ -16,6 +16,7 @@ SRC =	atoi.c \
 	memset.c \
 	putchar_fd.c \
 	putstr_fd.c \
+	putendl_fd.c \
 	split.c \
 	strchr.c \
 	strjoin.c \
