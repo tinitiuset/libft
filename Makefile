@@ -21,6 +21,7 @@ SRC =	atoi.c \
 	strlcat.c \
 	strlcpy.c \
 	strlen.c \
+	strmapi.c \
 	strncmp.c \
 	strnstr.c \
 	strrchr.c \
