@@ -18,6 +18,7 @@ SRC =	atoi.c \
 	strchr.c \
 	strjoin.c \
 	strdup.c \
+	striteri.c \
 	strlcat.c \
 	strlcpy.c \
 	strlen.c \

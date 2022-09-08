@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 15:42:35 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/08 15:59:42 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/08 16:46:11 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	*ft_memset(void *s, int c, size_t n);
 char	**ft_split(const char *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t maxlen);
