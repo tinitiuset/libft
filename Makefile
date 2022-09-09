@@ -16,11 +16,12 @@ SRC =	atoi.c 	bzero.c \
 	strmapi.c strncmp.c \
 	strnstr.c strrchr.c \
 	substr.c strtrim.c \
-	tolower.c toupper.c \
+	tolower.c toupper.c
 
 OBJS = $(SRC:%.c=%.o)
 
-BONUS =	lstadd_front.c lstnew.c
+BONUS =	lstadd_front.c lstnew.c \
+	lstsize.c
 
 BONUS_OBJS = $(BONUS:%.c=%.o)
 
