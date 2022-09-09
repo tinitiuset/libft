@@ -20,7 +20,7 @@ SRC =	atoi.c 	bzero.c \
 
 OBJS = $(SRC:%.c=%.o)
 
-BONUS =	lstnew.c
+BONUS =	lstadd_front.c lstnew.c
 
 BONUS_OBJS = $(BONUS:%.c=%.o)
 
