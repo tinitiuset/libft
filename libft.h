@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 15:42:35 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/09 13:12:03 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/09 16:50:56 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 
 typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
-	}			t_list;
+}			t_list;
 
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);

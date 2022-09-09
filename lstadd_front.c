@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 12:58:47 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/09 13:09:59 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/09 16:47:49 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}	
 }
-

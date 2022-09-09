@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 12:00:33 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/09 12:12:28 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/09 16:47:10 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *list;
+	t_list	*list;
 
-	list = malloc(sizeof(list));
+	list = malloc(sizeof(t_list));
 	if (!list)
 		return (NULL);
 	list->content = content;
