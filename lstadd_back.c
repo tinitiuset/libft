@@ -6,7 +6,7 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 17:25:16 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/09 17:52:56 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/09 18:01:51 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *node;
+	t_list	*node;
 
 	if (!new)
 		return ;
@@ -24,7 +24,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	}
 	node = *lst;
-	while(node->next)
+	while (node->next)
 		node = node->next;
 	node->next = new;
 }
