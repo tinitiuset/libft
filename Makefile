@@ -21,9 +21,10 @@ SRC =	atoi.c 	bzero.c \
 OBJS = $(SRC:%.c=%.o)
 
 BONUS =	lstadd_back.c lstadd_front.c \
-	lstclear.c lstdelone.c \
-	lstlast.c lstiter.c \
-	lstnew.c lstsize.c
+		lstclear.c lstdelone.c \
+		lstlast.c lstmap.c \
+		lstiter.c lstnew.c \
+		lstsize.c
 
 BONUS_OBJS = $(BONUS:%.c=%.o)
 
