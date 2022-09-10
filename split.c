@@ -6,13 +6,13 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 10:24:56 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/07 10:15:34 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/10 12:36:07 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_split_times(char const *s, char c)
+static size_t	ft_split_times(char const *s, char c)
 {
 	size_t	times;
 	int		jump;
@@ -33,7 +33,7 @@ size_t	ft_split_times(char const *s, char c)
 	return (times);
 }
 
-size_t	ft_chars_until_c(const char *s, char c)
+static size_t	ft_chars_until_c(const char *s, char c)
 {
 	size_t	len;
 
@@ -43,7 +43,7 @@ size_t	ft_chars_until_c(const char *s, char c)
 	return (len);
 }
 
-char	*ft_alloc_copy_word(const char *s, size_t len)
+static char	*ft_alloc_copy_word(const char *s, size_t len)
 {
 	char	*word;
 	size_t	i;

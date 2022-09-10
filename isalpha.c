@@ -6,20 +6,20 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 13:07:17 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/03 20:43:58 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/10 12:39:26 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isupper(int c)
+static int	ft_isupper(int c)
 {
 	if (65 <= c && c <= 90)
 		return (1);
 	return (0);
 }
 
-int	ft_islower(int c)
+static int	ft_islower(int c)
 {
 	if (97 <= c && c <= 122)
 		return (1);

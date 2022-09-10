@@ -6,13 +6,13 @@
 /*   By: mvalient <mvalient@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 15:53:00 by mvalient          #+#    #+#             */
-/*   Updated: 2022/09/07 11:04:54 by mvalient         ###   ########.fr       */
+/*   Updated: 2022/09/10 12:42:28 by mvalient         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_digits(int n)
+static int	ft_digits(int n)
 {
 	int	i;
 
